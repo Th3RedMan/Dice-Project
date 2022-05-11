@@ -60,16 +60,16 @@ button.is-active {
 @media (min-width: 1201px) {
     .dice-wrapper {
         margin-top: 9rem;
-        left: 35%;
+        left: 40%;
     }
 
     button {
         top: 70%;
-        left: 37.5%;
+        left: 41.5%;
     }
 
     button.is-active {
-        width: 24.5%;
+        width: 18.5%;
     }
 }
 
@@ -113,7 +113,7 @@ button.is-active {
     }
 
     button {
-        top: 55%;
+        top: 75%;
         left: 29.5%;
     }
 
@@ -122,12 +122,12 @@ button.is-active {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 601px) {
     .dice-wrapper {
         width: 20rem;
         height: 20rem;
         margin-top: 9rem;
-        left: 18%;
+        left: 21%;
     }
 
     .dot {
@@ -136,13 +136,13 @@ button.is-active {
     }
 
     button {
-        top: 60%;
-        left: 22.5%;
+        top: 65%;
+        left: 24.5%;
         font-size: 1.5rem;
     }
 
     button.is-active {
-        width: 65%;
+        width: 52%;
     }
 }
 
