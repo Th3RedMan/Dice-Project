@@ -15,6 +15,37 @@ body {
     box-shadow: -9px 9px 5px rgb(45, 43, 43);
 }
 
+button {
+    position: absolute;
+    transition: left .5s, top .5s;
+    left: 41.6%;
+    top: 67%;
+    transform: translate(-50% -50%);
+    padding: 2rem 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    cursor: pointer;
+    /* box-shadow: -3px 5px white;
+    top: 66.6%;
+    left: 42.5%;
+    transition: background-color .5s, color .5s, box-shadow 1s, top .6s, left .6s;
+    background-color: black;
+    color: white; */
+}
+
+button.is-active {
+    cursor: not-allowed;
+    background-color: black;
+    color: white;
+    width: 18.5%;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+
 .dot {
     position: absolute;
     background-color: black;
@@ -24,6 +55,95 @@ body {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: top .2s, left .2s;
+}
+
+@media (min-width: 1201px) {
+    .dice-wrapper {
+        margin-top: 9rem;
+        left: 35%;
+    }
+
+    button {
+        top: 70%;
+        left: 37.5%;
+    }
+
+    button.is-active {
+        width: 24.5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .dice-wrapper {
+        margin-top: 9rem;
+        left: 34%;
+    }
+
+    button {
+        top: 70%;
+        left: 36.5%;
+    }
+
+    button.is-active {
+        width: 29.5%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .dice-wrapper {
+        margin-top: 9rem;
+        left: 31%;
+    }
+
+    button {
+        top: 72%;
+        left: 34.5%;
+    }
+
+    button.is-active {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .dice-wrapper {
+        margin-top: 9rem;
+        left: 25%;
+    }
+
+    button {
+        top: 55%;
+        left: 29.5%;
+    }
+
+    button.is-active {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dice-wrapper {
+        width: 20rem;
+        height: 20rem;
+        margin-top: 9rem;
+        left: 18%;
+    }
+
+    .dot {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    button {
+        top: 60%;
+        left: 22.5%;
+        font-size: 1.5rem;
+    }
+
+    button.is-active {
+        width: 65%;
+    }
 }
 
 .dice-wrapper.centering>#dot.dot {
@@ -93,36 +213,4 @@ body {
     top: 50%;
     left: 50%;
     opacity: 1;
-}
-
-button {
-    position: absolute;
-    transition: left .5s, top .5s;
-    left: 41.6%;
-    top: 67%;
-    transform: translate(-50% -50%);
-    padding: 2rem 5rem;
-    font-weight: bold;
-    font-size: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-button:hover {
-    cursor: pointer;
-    /* box-shadow: -3px 5px white;
-    top: 66.6%;
-    left: 42.5%;
-    transition: background-color .5s, color .5s, box-shadow 1s, top .6s, left .6s;
-    background-color: black;
-    color: white; */
-}
-
-button.is-active {
-    cursor: not-allowed;
-    background-color: black;
-    color: white;
-    width: 18.5%;
-    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
-
 }
