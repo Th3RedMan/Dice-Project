@@ -1,0 +1,128 @@
+body {
+    background-color: teal;
+}
+
+.dice-wrapper {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border: 6px solid #000000;
+    border-radius: 4px;
+    left: 39.6%;
+    margin-top: 10%;
+    margin-bottom: 8rem;
+    background-color: white;
+    box-shadow: -9px 9px 5px rgb(45, 43, 43);
+}
+
+.dot {
+    position: absolute;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: top .2s, left .2s;
+}
+
+.dice-wrapper.centering>#dot.dot {
+    top: 50%;
+    left: 50%;
+}
+
+
+/* TOP LEFT DOT */
+.dice-wrapper.two .dot:nth-child(1),
+.dice-wrapper.three .dot:nth-child(1),
+.dice-wrapper.four .dot:nth-child(1),
+.dice-wrapper.five .dot:nth-child(1),
+.dice-wrapper.six .dot:nth-child(1) {
+    top: 15%;
+    left: 15%;
+    opacity: 1;
+}
+
+/* TOP RIGHT DOT */
+.dice-wrapper.four .dot:nth-child(2),
+.dice-wrapper.five .dot:nth-child(2),
+.dice-wrapper.six .dot:nth-child(2) {
+    top: 15%;
+    left: 85%;
+    opacity: 1;
+}
+
+/* BOTTOM RIGHT DOT */
+.dice-wrapper.two .dot:nth-child(6),
+.dice-wrapper.three .dot:nth-child(2),
+.dice-wrapper.four .dot:nth-child(6),
+.dice-wrapper.five .dot:nth-child(3),
+.dice-wrapper.six .dot:nth-child(6) {
+    top: 85%;
+    left: 85%;
+    opacity: 1;
+}
+
+/* MIDDLE LEFT DOT */
+.dice-wrapper.six .dot:nth-child(3) {
+    top: 50%;
+    left: 15%;
+    opacity: 1;
+}
+
+/* MIDDLE RIGHT DOT */
+.dice-wrapper.six .dot:nth-child(4) {
+    top: 50%;
+    left: 85%;
+    opacity: 1;
+}
+
+/* BOTTOM LEFT DOT */
+.dice-wrapper.four .dot:nth-child(5),
+.dice-wrapper.five .dot:nth-child(4),
+.dice-wrapper.six .dot:nth-child(5) {
+    top: 85%;
+    left: 15%;
+    opacity: 1;
+}
+
+/* MIDDLE DOT */
+.dice-wrapper.one .dot:nth-child(1),
+.dice-wrapper.three .dot:nth-child(3),
+.dice-wrapper.five .dot:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    transition: left .5s, top .5s;
+    left: 41.6%;
+    top: 67%;
+    transform: translate(-50% -50%);
+    padding: 2rem 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    cursor: pointer;
+    /* box-shadow: -3px 5px white;
+    top: 66.6%;
+    left: 42.5%;
+    transition: background-color .5s, color .5s, box-shadow 1s, top .6s, left .6s;
+    background-color: black;
+    color: white; */
+}
+
+button.is-active {
+    cursor: not-allowed;
+    background-color: black;
+    color: white;
+    width: 18.5%;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+
+}
